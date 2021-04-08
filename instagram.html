@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Noto+Sans:wght@700&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/instragram.css">
+</head>
+<body>
+    <div class="header_2">
+        <div class="logo">
+            <img src="logo.png" alt="LOGO">
+        </div>
+    </div>
+    <!-- mobile-header HTML start -->
+    <nav class="mobile_header">
+        <a href="./index.html" class="mob_logo"><img src="./logo.png" alt="logo"></a>
+        <button class="mob_btn_nav_toggle">
+            <i class="fa fa-bars"></i>
+        </button>
+        <div class="navContent_two">
+            <a href="/index.html"><span>Home</span></a>
+            <a href="/work.html"><span>My work</span></a>
+            <a href="/articles.html"><span>Articles</span></a>
+            <a href="/instagram.html"><span class="instagramNav"> Instagram</span></a>    
+        </div>
+    </nav>
+    <!-- mobile-header HTML end -->
+    <div class="main">
+        <div class="content">
+            <div class="image">
+                <img src="./assets/images/insta_side_image.png" alt="Srishti Vashishatha">
+            </div>
+            <div class="info">
+                <div class="infoPack">
+                    <div class="instaIcons">
+                        <div class="instaLogo">
+                            <img src="./assets/images/insta_image.png" alt="insta-logo">
+                        </div>
+                        <div class="insta-handle">
+                            <p>@Neophux</p>
+                        </div>
+                    </div>
+                    
+
+                    <div class="insta-para">
+                        <p>I post content to share my hard earned knowledge with all the young designers in the industry.</p>
+                    </div>
+
+                    <a href="https://www.instagram.com/neophux/" target="_blank" class="instaFollow"> 
+                        <button class= "follow" type="button">Follow Me</button>
+                    </a>
+                </div>
+            </div> 
+        </div>
+        <div class="nav">
+            <div class="logo">
+                <img src="logo.png" alt="LOGO">
+            </div>
+            <div class="navContent">
+                <a href="/index.html"><span>Home</span></a>
+                <a href="/work.html"><span>My work</span></a>
+                <a href="/articles.html"><span>Articles</span></a>
+                <a href="/instagram.html"><span class="instagramNav"> Instagram</span></a>    
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $('.mob_btn_nav_toggle').click(function(){
+            $('.navContent_two').slideToggle();
+        })
+    </script>
+</body>
+</html>
