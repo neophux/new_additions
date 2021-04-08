@@ -26,9 +26,9 @@
         <!-- mobile-header HTML start -->
     <nav class="mobile_header">
         <a href="./index.html" class="mob_logo"><img src="./logo.png" alt="logo"></a>
-        <button class="mob_btn_nav_toggle">
-            <i class="fa fa-bars"></i>
-        </button>
+        <div class="menu-btn">
+            <div class="menu-btn__burger"></div>
+        </div>
         <div class="navContent_two">
             <a href="/index.html"><span>Home</span></a>
             <a href="/work.html" ><span>My work</span></a>
@@ -92,9 +92,20 @@
         </div>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script>
-            $('.mob_btn_nav_toggle').click(function(){
+            $('.menu-btn').click(function(){
                 $('.navContent_two').slideToggle();
             })
+            const menuBtn = document.querySelector('.menu-btn');
+            let menuOpen = false;
+            menuBtn.addEventListener('click', () => {
+            if(!menuOpen) {
+                menuBtn.classList.add('open');
+                menuOpen = true;
+            } else {
+                menuBtn.classList.remove('open');
+                menuOpen = false;
+            }
+            });
         </script>
     </body>
 </html>
